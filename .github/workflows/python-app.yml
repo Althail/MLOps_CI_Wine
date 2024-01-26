@@ -19,7 +19,6 @@ jobs:
           REPO_TOKEN: ${{ secrets.TOKEN_GIT }}
         run: |
           pip install -r requirements.txt
-          pip install --upgrade pip
           python train.py
           npm install -g @dvcorg/cml
           echo "## Model metrics" > report.md
