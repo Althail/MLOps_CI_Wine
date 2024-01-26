@@ -22,3 +22,5 @@ jobs:
           pip install --upgrade pip
           python train.py
           npm install -g @dvcorg/cml
+          echo "## Model metrics" > report.md
+          cat metrics.txt >> report.md
